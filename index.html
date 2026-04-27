@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <!-- start of the head section -->
+  <head>
+    <!-- char encoding -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="A page about T-shirts" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- title tag displays text in browswer tag -->
+    <title>Moon Print Studio</title>
+  </head>
+  <!-- start of the body section -->
+  <body>
+    <header>
+      <div class="container nav-bar">
+        <h1 class="logo">Moon Print Studio</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <h2>Create Your Custom Shirt</h2>
+          <p>
+            Choose your shirt style, add design options, and place your order.
+          </p>
+        </div>
+
+        <img
+          src="images/shirt2.jpg"
+          alt="White custom t-shirt"
+          width="400"
+          height="300"
+        />
+      </section>
+
+      <section class="order-section">
+        <form id="orderForm">
+          <h2>Order Form</h2>
+
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" />
+
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" min="1" />
+
+          <label for="color">Choose Shirt Color</label>
+          <input type="color" id="color" value="#ffffff" />
+
+          <fieldset>
+            <legend>Shirt Type</legend>
+
+            <label>
+              <input type="radio" name="shirtType" value="15" />
+              Basic T-Shirt - $15
+            </label>
+
+            <label>
+              <input type="radio" name="shirtType" value="22" />
+              Premium T-Shirt - $22
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Design Add-ons</legend>
+
+            <label>
+              <input type="checkbox" name="addons" value="5" />
+              Front Logo - $5
+            </label>
+
+            <label>
+              <input type="checkbox" name="addons" value="7" />
+              Back Design - $7
+            </label>
+
+            <label>
+              <input type="checkbox" name="addons" value="10" />
+              Rush Order - $10
+            </label>
+          </fieldset>
+
+          <button type="submit">Place Order</button>
+          <button type="reset" id="resetBtn">Reset</button>
+        </form>
+
+        <aside id="orderSummary">
+          <h2>Order Summary</h2>
+          <p>Your order summary will appear here.</p>
+        </aside>
+      </section>
+
+      <section class="gallery">
+        <h2>Popular Shirt Designs</h2>
+
+        <img
+          src="images/shirt1.jpg"
+          alt="Black printed t-shirt"
+          width="300"
+          height="250"
+        />
+      </section>
+    </main>
+    <!-- footer and javascript file -->
+    <footer>
+      <p>&copy; 2026 Moon Print Studio</p>
+    </footer>
+    <script src="JavaScript/scripts.js"></script>
+  </body>
+</html>
